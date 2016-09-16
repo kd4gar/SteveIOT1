@@ -1,0 +1,26 @@
+﻿<Page
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SteveIOT1"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:Maps="using:Windows.UI.Xaml.Controls.Maps"
+    x:Class="SteveIOT1.MainPage"
+    mc:Ignorable="d">
+
+    <Grid Background="#FF3C0404">
+        <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
+            <Image x:Name="wuLogo" HorizontalAlignment="Center" Height="80" VerticalAlignment="Center" Width="130" Source="http://icons.wxug.com/graphics/wu2/logo_130x80.png"/>
+            <TextBlock x:Name="MainBlock" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Location Text" VerticalAlignment="Center" Foreground="White" FontSize="52"/>
+            <Maps:MapControl x:Name="MapControl1" MapServiceToken="m4CmVHpVw89Eedg8Hl1i~-2-RybAPtdiFYa24fhhmwA~AuMHdVkwNkW4hvHX6GQjRcVjDWbA9NDaLv24bWW4kgOBh_XzjS64pN71fJ9ObrTX" Height="243" VerticalAlignment="Bottom" Margin="0,0,24,25" HorizontalAlignment="Center" Width="308"/>
+            <TextBlock x:Name="SubBlock" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="Temp Data" VerticalAlignment="Center" Foreground="White" FontSize="72"/>
+            <Image x:Name="wximage" HorizontalAlignment="Center" Height="50" VerticalAlignment="Center" Width="50"/>
+
+            <TextBlock x:Name="SubBlock2" HorizontalAlignment="Center"  TextWrapping="Wrap" Text="" VerticalAlignment="Center" Foreground="White" FontSize="52"/>
+           
+        </StackPanel>
+        <TextBlock x:Name="ipinformation" HorizontalAlignment="Left" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Bottom" Foreground="White"/>
+        <Button x:Name="btnRefresh" Content="ReLoad" HorizontalAlignment="Left" Margin="903,582,0,0" VerticalAlignment="Top" RenderTransformOrigin="-0.498,0.651" Click="btnRefresh_Click" Background="#33FBF6F6"/>
+
+    </Grid>
+</Page>
